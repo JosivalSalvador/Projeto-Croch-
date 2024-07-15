@@ -1,0 +1,5 @@
+Página de Produtos: Listar todos os produtos disponíveis para venda.
+Página de Detalhes do Produto: Exibir detalhes específicos de cada produto.
+Carrinho de Compras: Gerenciar os itens adicionados e calcular o total da compra.
+Página de Checkout: Formulário para finalizar a compra, coletando dados do cliente.
+Página de Contato: Formulário para os clientes entrarem em contato com você.
