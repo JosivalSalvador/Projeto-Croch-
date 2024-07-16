@@ -30,6 +30,12 @@ body {
 .cart-button {
     display: inline-flex;
     align-items: center;
+    border: none;
+    border-radius: 25px; /* Arredondamento maior para aparência moderna */
+    
+}
+
+.cart-button button{
     background-color: #faaccf; /* Azul */
     color: white;
     border: none;
@@ -105,7 +111,7 @@ body {
 
 .head ul li a:hover {
     text-decoration: none;
-    background-color: red;
+    background-color: #faaccf79;
     border-radius: 5px;
 }
 
