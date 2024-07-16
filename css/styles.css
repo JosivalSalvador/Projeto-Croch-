@@ -37,7 +37,7 @@ body {
 
 .cart-button button{
     background-color: #faaccf; /* Azul */
-    color: white;
+    color: black;
     border: none;
     border-radius: 25px; /* Arredondamento maior para aparência moderna */
     padding: 10px 20px;
