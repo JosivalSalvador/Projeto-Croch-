@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Crochê da T</title>
-    <link rel="stylesheet" href="..\css\styles.css">
+    <title>Loja de Crochê</title>
+    <link rel="shortcut icon" href="../File/Logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
-    <header>
-        <h1>Loja de Crochê</h1>
-        <nav>
+    
+    <header class="barraNav">
+        <div class="logo-container">
+            <img src="../File/Logo.jpg" alt="LOGO">
+        </div>
+        <nav class="head">
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="products.html">Produtos</a></li>
@@ -17,20 +22,17 @@
                 <li><a href="contact.html">Contato</a></li>
             </ul>
         </nav>
+        <div class="cart-button">
+            <button>
+                <span class="cart-icon">🛒</span>Ver Carrinho<span class="cart-count">0</span>
+            </button>
+        </div>
     </header>
     <main>
         <section id="featured-products">
-            <h2>Produtos em Destaque</h2>
-            <div class="product">
-                <img src="images/product1.jpg" alt="Produto 1">
-                <h3>Produto 1</h3>
-                <p>Descrição do produto 1</p>
-                <button onclick="addToCart(1)">Adicionar ao Carrinho</button>
-            </div>
-            <!-- Adicione mais produtos conforme necessário -->
         </section>
     </main>
-    <footer>
+    <footer class="rodape">
         <p>&copy; 2024 Loja de Crochê</p>
     </footer>
     <script src="../js/script.js"></script>

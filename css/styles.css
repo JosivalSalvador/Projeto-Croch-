@@ -2,28 +2,111 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url(../File/image2.webp);
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center;
+    background-attachment: fixed;
+    
 }
 
-header {
-    background-color: #6a5acd;
+
+.barraNav{
+    display: flex;
+    justify-content:center;
+    /*width: 100%;*/
+    align-items: center;
+    background-color: #faaccf7f;
+    padding: 10px 20px;
+    
+}
+
+.logo-container img {
+    mix-blend-mode: multiply;
+    height: 80px;
+    
+}
+
+.cart-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #faaccf; /* Azul */
     color: white;
-    padding: 1em;
-    text-align: center;
+    border: none;
+    border-radius: 25px; /* Arredondamento maior para aparência moderna */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* Para posicionar o contador */
 }
 
-nav ul {
+.cart-button:hover {
+    background-color: #faacca; /* Azul mais escuro */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.cart-icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.cart-count {
+    background-color: #ff6347; /* Tomate */
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px; /* Largura mínima para garantir círculo */
+    height: 20px;
+    transition: transform 0.3s ease; /* Animação suave */
+}
+
+.cart-button:hover .cart-count {
+    transform: scale(1.1); /* Aumenta o tamanho do contador ao passar o mouse */
+}
+
+
+
+.head{
+    flex: 2;
+    align-items: center;
+}
+
+
+.head ul {
+    display: flex;
     list-style-type: none;
+    justify-content: center;
+    margin: 0;
     padding: 0;
 }
 
-nav ul li {
+.head ul li {
     display: inline;
-    margin: 0 1em;
 }
 
-nav ul li a {
-    color: white;
+.head ul li a {
+    color: black;
     text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.head ul li a:hover {
+    text-decoration: none;
+    background-color: red;
+    border-radius: 5px;
 }
 
 main {
@@ -50,8 +133,8 @@ main {
 }
 
 footer {
-    background-color: #6a5acd;
-    color: white;
+    background-color: #faaccf7f;
+    color: black;
     text-align: center;
     padding: 1em;
     position: fixed;
