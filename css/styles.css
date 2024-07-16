@@ -11,6 +11,8 @@ body {
     height: 100%;
     display: flex;
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
+    flex-direction: column;
     
 }
 
@@ -129,22 +131,26 @@ body {
 main{
     display: flex;
     margin-top: 80px;
-    width: 60%;
-    height: 60%;
-    justify-content: center;
+    width: 100%;
+    height: 100%;
     align-items: center;
     height: 100vh; /* Utilizando altura total da viewport */
-    background-color: red; /* Cor de fundo apenas para visualização */
+    flex-direction: column;
 }
 
 .bloco1{
     background-color: blue;
     text-align: center;
-    width: 80%;
+    width: 85%;
+    height: 60%;
     padding: 20px;
 }
 
 .bloco2{
+    background-color: green;
+    text-align: center;
+    width: 80%;
+    padding: 20px;
 }
 
 .rodape {
