@@ -7,6 +7,10 @@ body {
     background-repeat: no-repeat; /* Evita que a imagem se repita */
     background-position: center;
     background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
     
 }
 
@@ -16,15 +20,19 @@ body {
     justify-content:center;
     /*width: 100%;*/
     align-items: center;
-    background-color: #faaccf7f;
-    padding: 10px 20px;
-    
+    background-color: #faaccf73;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.logo-container{
+    display: inline-flex;
 }
 
 .logo-container img {
-    mix-blend-mode: multiply;
     height: 80px;
-    
 }
 
 .cart-button {
@@ -32,6 +40,7 @@ body {
     align-items: center;
     border: none;
     border-radius: 25px; /* Arredondamento maior para aparência moderna */
+    margin-right: 15px;
     
 }
 
@@ -86,6 +95,7 @@ body {
 .head{
     flex: 2;
     align-items: center;
+    justify-content: center;
 }
 
 
@@ -115,35 +125,34 @@ body {
     border-radius: 5px;
 }
 
-main {
-    padding: 2em;
-}
 
-#featured-products {
+main{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    margin-top: 80px;
+    width: 60%;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Utilizando altura total da viewport */
+    background-color: red; /* Cor de fundo apenas para visualização */
 }
 
-.product {
-    flex: 1 1 calc(33.333% - 1em);
-    margin: 0.5em;
-    padding: 1em;
-    border: 1px solid #ccc;
+.bloco1{
+    background-color: blue;
     text-align: center;
+    width: 80%;
+    padding: 20px;
 }
 
-.product img {
-    max-width: 100%;
-    height: auto;
+.bloco2{
 }
 
-footer {
-    background-color: #faaccf7f;
+.rodape {
+    background-color: #faaccf73;
     color: black;
     text-align: center;
     padding: 1em;
-    position: fixed;
     width: 100%;
     bottom: 0;
+    z-index: 1;
 }
