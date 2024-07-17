@@ -1,4 +1,5 @@
 function muda_valor() {
-    let elemento = document.getElementById("quant");
-    elemento.innerHTML = "6"
-  }
+  let numeroAleatorio = Math.floor(Math.random() * 10);
+  let elemento = document.getElementById("quant");
+  elemento.innerHTML = numeroAleatorio.toString();
+}

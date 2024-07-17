@@ -73,7 +73,7 @@ body {
     background-color: #ff6347; /* Tomate */
     color: white;
     border-radius: 50%;
-    padding: 5px 10px;
+    padding: 2px 5px;
     font-size: 14px;
     font-weight: bold;
     margin-left: 10px;
@@ -142,7 +142,7 @@ main{
     display: flex;
     margin-top: 20px;
     gap: 15px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #faaccf4f;
     width: 90%;
     padding: 20px;
     flex: 1;
@@ -172,7 +172,6 @@ main{
 }
 
 .bloco2{
-    background-color: rgba(0, 0, 0, 0.3);
     text-align: center;
     width: 90%;
     padding: 20px;
@@ -188,6 +187,7 @@ main{
     grid-auto-flow: column;
     flex: 2;
     margin-bottom: 20px;
+    background-color: #faaccf4f;
 
 }
 
@@ -197,7 +197,7 @@ main{
     text-align: left;
     height: 80%;
     width: 100%;
-    background-color: #faaccf4f;
+    
 }
 
 .bloco2 div button{
@@ -216,12 +216,17 @@ main{
 }
 
 .item{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    background-color: #faaccf5f;
 }
 
 .item img{
     height: 100%;
     width: 100%;
+}
+
+.item h3{
+    margin-left: 10px;
 }
 
 .rodape {
