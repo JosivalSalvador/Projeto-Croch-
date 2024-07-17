@@ -134,23 +134,42 @@ main{
     width: 100%;
     height: 100%;
     align-items: center;
-    height: 100vh; /* Utilizando altura total da viewport */
+    justify-content: center;
     flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .bloco1{
+    display: flex;
     background-color: blue;
-    text-align: center;
-    width: 85%;
-    height: 60%;
+    width: 90%;
+    height: 100px;
     padding: 20px;
 }
 
 .bloco2{
     background-color: green;
     text-align: center;
-    width: 80%;
+    width: 90%;
+    height: 100%;
     padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(12, 150px);
+    gap: 20px;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    grid-auto-rows: 10px;
+    grid-auto-flow: column;
+
+}
+
+.bloco2 div{
+    height: 100%;
+    width: 100%;
+    background-color: red;
 }
 
 .rodape {
@@ -159,6 +178,6 @@ main{
     text-align: center;
     padding: 1em;
     width: 100%;
+    height: 100%;
     bottom: 0;
-    z-index: 1;
 }
