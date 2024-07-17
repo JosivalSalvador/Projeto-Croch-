@@ -201,7 +201,7 @@ main{
 }
 
 .bloco2 div button{
-    border-color:#faaccf ;
+    border: none;
     background-color: #faaccf;
     border-radius: 25px; /* Arredondamento maior para aparência moderna */
     padding: 5px 15px;
