@@ -127,6 +127,91 @@ body {
     border-radius: 5px;
 }
 
+#Carrinho{
+    position: fixed;
+    border-radius: 27px;
+    top: 80px;
+    right: 5px;
+    z-index: 10;
+    width: 600px;
+    background-color: white;
+    flex-direction: column;
+    display: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 28px;
+    text-align: center;
+}
+
+#itens_carrinho{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    background-color: magenta;
+}
+
+.product {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: red;
+
+}
+
+.product img {
+    width: 100%;
+    height: 100%;
+}
+
+.details {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: blue;
+    
+}
+
+.details .quantity {
+    display: flex;
+    align-items: center;
+    background-color: green;
+}
+
+.details .quantity button {
+    width: 30px;
+    align-items: center;
+    height: 30px;
+}
+
+.details .quantity input {
+    width: 30px;
+    align-items: center;
+}
+
+.remove {
+    color: red;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 14px;
+    text-align: left;
+}
+
+
+.total_itens{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#Carrinho button{
+    margin-top: 40px;
+}
 
 main{
     display: flex;
@@ -172,7 +257,6 @@ main{
 }
 
 .bloco2{
-    text-align: center;
     width: 90%;
     padding: 20px;
     display: grid;
@@ -191,16 +275,16 @@ main{
 
 }
 
-.bloco2 div{
+.item_bloco{
     display: flex;
     flex-direction: column;
-    text-align: left;
-    height: 80%;
+    border-radius: 25px;
+    height: 100%;
     width: 100%;
     
 }
 
-.bloco2 div button{
+.item_bloco button{
     border: none;
     background-color: #faaccf;
     border-radius: 25px; /* Arredondamento maior para aparência moderna */
@@ -208,7 +292,7 @@ main{
     margin: 20px;
 }
 
-.bloco2 div button:hover{
+.item_bloco button:hover{
     background-color: #b15e7e; /* Azul mais escuro */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
     border-radius: 25px; /* Arredondamento maior para aparência moderna */
@@ -216,17 +300,26 @@ main{
 }
 
 .item{
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
     background-color: #faaccf5f;
+    width: 100%;
+    height: 70%;
 }
+
+.det{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+
 
 .item img{
     height: 100%;
     width: 100%;
-}
-
-.item h3{
-    margin-left: 10px;
+    margin-bottom: 30px;
+    border-radius: 25px;
 }
 
 .rodape {
