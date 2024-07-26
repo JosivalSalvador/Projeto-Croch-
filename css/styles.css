@@ -133,7 +133,7 @@ body {
     top: 80px;
     right: 5px;
     z-index: 10;
-    width: 600px;
+    width: 400px;
     background-color: white;
     flex-direction: column;
     display: none;
@@ -149,20 +149,24 @@ body {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
-    background-color: magenta;
+    background-color: #faaccf4f;
+
+    max-height: 250px; /* Defina a altura máxima conforme necessário */
+    overflow-y: auto;  /* Adicione uma barra de rolagem vertical */
+
 }
 
 .product {
     width: 100%;
     height: 100%;
     display: flex;
-    background-color: red;
+    
 
 }
 
 .product img {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
 }
 
 .details {
@@ -170,36 +174,34 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    text-align: left;
-    background-color: blue;
+    background-color: #faacca;
     
 }
 
 .details .quantity {
     display: flex;
     align-items: center;
-    background-color: green;
+    margin: 20px;
 }
 
 .details .quantity button {
     width: 30px;
-    align-items: center;
-    height: 30px;
 }
 
 .details .quantity input {
     width: 30px;
-    align-items: center;
 }
 
+
+
 .remove {
+    display: flex;
+    align-items: center;
     color: red;
     cursor: pointer;
     background: none;
     border: none;
-    padding: 0;
-    font-size: 14px;
-    text-align: left;
+    font-size: 30px;
 }
 
 
